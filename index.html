@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hideki Ariyama - Home</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="An attractive home page for any browser"
+    />
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="img/icon.png" />
+    <!--here you can change the windows icon-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="home-image">
+        <!--the first image of the page-->
+        <img
+          id="img-n1"
+          src="https://i.pinimg.com/564x/01/b9/aa/01b9aa9306c19c424bb444dabf670625.jpg"
+          alt="Anime Image"
+        />
+      </div>
+
+      <div id="bg-color-for-grid">
+        <section class="container-home">
+          <div class="home-welcome">
+            <h1>Welcome Back!</h1>
+            <!--start message-->
+            <h2>Home</h2>
+            <h2 id="date"></h2>
+          </div>
+
+          <form
+            form
+            class="google-search-engine"
+            action="https://www.google.com/search"
+            method="GET"
+            onsubmit="return validateForm();"
+            autocomplete="off"
+          >
+            <input
+              class="search-box"
+              type="text"
+              name="q"
+              placeholder="Search"
+              oninput="handleInput(this)"
+              onblur="handleBlur(this)"
+            />
+          </form>
+
+          <!--here you can change the links and name-->
+
+          <div class="lobby-list-home">
+            <a href="https://visortmo.com/"
+              ><img src="img/cat.png" alt="LectorManga"
+            /></a>
+            <a href="https://www.crunchyroll.com/"
+              ><img src="img/crunchyroll.png" alt="Crunchyroll"
+            /></a>
+
+            <a href="https://mail.google.com/"
+              ><img src="img/gmail.png" alt="Gmail"
+            /></a>
+            <a href="https://web.whatsapp.com/"
+              ><img src="img/whatsapp.png" alt="Whatsapp"
+            /></a>
+            <a href="https://www.pinterest.es/"
+              ><img src="img/logotipo-de-pinterest.png" alt="Pinterest"
+            /></a>
+
+            <a href="https://sigeiacademico.itla.edu.do/"
+              ><img src="/img/estrella.png"
+            /></a>
+            <a href="https://www.coursera.org/"
+              ><img src="img/coursera.png"
+            /></a>
+            <a href="https://www.w3schools.com/"><img src="/img/w3s.png" /></a>
+          </div>
+
+          <div class="social">
+            <!--here you can put your social networks 'maximum 6' -->
+            <a href="https://www.linkedin.com/"
+              ><img src="img/linkedin.png"
+            /></a>
+            <img src="img/icon.png" />
+            <a href="https://github.com/"><img src="img/github.png" /></a>
+          </div>
+          <!--https://www.flaticon.es/ -->
+        </section>
+      </div>
+    </main>
+    <footer>
+      <script type="text/javascript" src="script.js"></script>
+    </footer>
+  </body>
+</html>
